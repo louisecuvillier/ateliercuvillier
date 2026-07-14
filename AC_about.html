@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Atelier Cuvillier | Louise Cuvillier, Scandinavian Original Art</title>
+<meta name="description" content="Louise Cuvillier creates Scandinavian original art — paintings, handformed clay, and hand-felted wool. Atelier Cuvillier studio, Sweden. The Pieces of Peace collection.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="About — Atelier Cuvillier | Louise Cuvillier, Scandinavian Original Art">
+<meta property="og:description" content="Louise Cuvillier creates Scandinavian original art — paintings, handformed clay, and hand-felted wool. Atelier Cuvillier studio, Sweden. The Pieces of Peace collection.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="https://louisecuvillier.github.io/ateliercuvillier/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --w:#FFFFFF;
+  --warm:#FAFAF7;
+  --spring-g:#F4FAF6;  /* whisper green */
+  --spring-p:#FFF2F5;  /* whisper pink */
+  --spring-b:#F4F7FD;  /* whisper blue */
+  --sage:#8BAF9A;      /* medium sage accent */
+  --rose:#F0607A;      /* dusty rose accent */
+  --sky:#8AA5C0;       /* soft sky blue accent */
+  --text:#2C2520;
+  --mid:#7A7268;
+  --faint:#B5ADA5;
+  --line:rgba(139,175,154,0.18);
+  --max:1080px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--w);color:var(--text);font-weight:300;line-height:1.75;padding-top:68px}
+/* FONTS */
+h1,h2,h3,h4,.serif{font-family:'Playfair Display',serif}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:1rem 3rem}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;color:var(--text);text-decoration:none;letter-spacing:0.02em}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover,.nav-links a.on{color:var(--text)}
+.nav-etsy{border:1px solid var(--sage);color:var(--sage)!important;padding:0.32rem 0.8rem;transition:all 0.2s}
+.nav-etsy:hover{background:var(--sage);color:white!important}
+/* BUTTONS */
+.btn{display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.8rem 1.7rem;text-decoration:none;transition:all 0.2s;cursor:pointer;border:none;font-weight:400}
+.btn-sage{background:var(--sage);color:white}.btn-sage:hover{background:var(--text)}
+.btn-rose{background:var(--rose);color:white}.btn-rose:hover{background:var(--text)}
+.btn-outline{background:transparent;color:var(--text);border:1.5px solid var(--line)}.btn-outline:hover{border-color:var(--text)}
+.btn-outline-w{background:transparent;color:white;border:1px solid rgba(255,255,255,0.5)}.btn-outline-w:hover{background:white;color:var(--text)}
+.btn-w{width:100%;text-align:center;display:block}
+/* LAYOUT */
+section{padding:5.5rem 3rem}
+.inner{max-width:var(--max);margin:0 auto}
+/* LABELS */
+.label{font-family:'DM Sans',sans-serif;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--sage);margin-bottom:0.6rem;display:block}
+.label-rose{font-family:'DM Sans',sans-serif;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--rose);margin-bottom:0.6rem;display:block}
+.label-sky{font-family:'DM Sans',sans-serif;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--sky);margin-bottom:0.6rem;display:block}
+/* SECTION TITLE */
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:400;color:var(--text);margin-bottom:1.1rem;line-height:1.1}
+/* FORMS */
+.field{padding:0.82rem 1rem;border:1px solid var(--line);background:var(--warm);font-family:'DM Sans',sans-serif;font-size:0.87rem;color:var(--text);outline:none;transition:border-color 0.2s;width:100%}
+.field:focus{border-color:var(--sage)}
+textarea.field{height:110px;resize:vertical}
+/* FOOTER */
+footer{background:var(--warm);border-top:1px solid var(--line);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.foot-logo{font-family:'Playfair Display',serif;font-size:0.9rem;color:var(--faint);font-style:italic}
+.foot-links{display:flex;gap:2rem;flex-wrap:wrap}
+.foot-links a{font-size:0.61rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--faint);text-decoration:none;transition:color 0.2s}
+.foot-links a:hover{color:var(--sage)}
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem}.nav-links li:not(:last-child){display:none}
+  section{padding:4rem 1.5rem}
+  footer{flex-direction:column;text-align:center;padding:2rem 1.5rem}
+}
+
+.about-hero{height:50vh;overflow:hidden;position:relative;margin-top:-68px}
+.about-hero img{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;filter:saturate(0.88) brightness(0.82)}
+.ah-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(44,37,32,0.6) 0%,transparent 55%);display:flex;align-items:flex-end;padding:3rem}
+.ah-h1{font-family:'Playfair Display',serif;font-size:3rem;font-weight:400;color:white;font-style:italic}
+.ag{display:grid;grid-template-columns:1fr 1.2fr;gap:6rem;align-items:start}
+.a-img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;object-position:center top}
+.a-sub{font-family:'DM Sans',sans-serif;font-size:0.66rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--rose);margin-bottom:0.3rem}
+.a-name{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:400;color:var(--text);margin-bottom:1.4rem;font-style:italic}
+.a-body{font-size:0.9rem;color:var(--mid);line-height:1.9;margin-bottom:0.9rem}
+.a-pull{font-family:'Playfair Display',serif;font-size:1.12rem;font-style:italic;color:var(--sage);border-left:2px solid var(--spring-g);padding-left:1.2rem;line-height:1.6;margin:1.8rem 0;border-left-color:var(--sage)}
+.ig{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2.5rem}
+.ii{background:var(--spring-g);padding:1.8rem}
+.i-n{font-family:'Playfair Display',serif;font-size:1.8rem;color:rgba(139,175,154,0.5);line-height:1;margin-bottom:0.7rem}
+.i-t{font-family:'Playfair Display',serif;font-size:1rem;color:var(--text);margin-bottom:0.4rem}
+.i-b{font-size:0.8rem;color:var(--mid);line-height:1.75}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:2rem}
+.pi{border-top:2px solid var(--rose);padding-top:1.1rem}
+.p-n{font-family:'Playfair Display',serif;font-size:1.8rem;color:rgba(196,152,152,0.4);margin-bottom:0.5rem}
+.p-t{font-family:'Playfair Display',serif;font-size:1rem;color:var(--text);margin-bottom:0.4rem}
+.p-b{font-size:0.8rem;color:var(--mid);line-height:1.75}
+@media(max-width:900px){
+  .about-hero{height:40vh}.ah-h1{font-size:2.2rem}
+  .ag,.ig,.pg{grid-template-columns:1fr;gap:2rem}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Atelier Cuvillier</a>
+  <ul class="nav-links"><li><a href="index.html">Shop</a></li>
+    <li><a href="about.html" class="on">About</a></li>
+    <li><a href="trade.html">Trade</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="https://www.etsy.com/shop/AtelierCuvillier" target="_blank" class="nav-etsy">Etsy Shop ↗</a></li></ul>
+</nav>
+<div class="about-hero">
+  <img src="https://louisecuvillier.github.io/ateliercuvillier/studio_portrait.jpg" alt="Louise Cuvillier in her Gothenburg studio — Atelier Cuvillier">
+  <div class="ah-ov"><h1 class="ah-h1">The Studio</h1></div>
+</div>
+
+<section>
+<div class="ag inner">
+  <img src="https://louisecuvillier.github.io/ateliercuvillier/studio_portrait.jpg" alt="Louise Cuvillier, artist, Gothenburg" class="a-img" onerror="this.style.background='var(--spring-g)'">
+  <div>
+    <p class="a-sub">Artist & Founder</p>
+    <h2 class="a-name">I'm Louise</h2>
+    <p class="a-body">I paint because I need to. After years of working in human rights — in conflict zones, in difficult rooms, carrying difficult realities — making something with my hands became necessary. A counterweight. A way back to what is enduring.</p>
+    <p class="a-body">Light on water. Pebbles through glass. Wool between fingers. These are the things that stay.</p>
+    <blockquote class="a-pull">"I want to make pieces so quietly beautiful that when you come upon them, the noise of the day subsides."</blockquote>
+    <p class="a-body">Atelier Cuvillier is a small studio in Gothenburg where paintings, clay, and wool become quiet objects for living with. Each piece is made alone, slowly, in small quantities. That is the only way I know how.</p>
+    <a href="index.html" class="btn btn-sage" style="margin-top:0.5rem;">See the Collection</a>
+  </div>
+</div>
+</section>
+
+<section style="background:var(--spring-g)">
+<div class="inner">
+  <span class="label">What I paint towards</span>
+  <h2 class="sec-title">The shapes that stay</h2>
+  <div class="ig">
+    <div class="ii"><div class="i-n">01</div><p class="i-t">Nordic light</p><p class="i-b">The quality of Scandinavian light — low angle, long shadow, water-filtered — makes ordinary surfaces luminous.</p></div>
+    <div class="ii"><div class="i-n">02</div><p class="i-t">Still water</p><p class="i-b">Pebbles seen through clear water. The way movement and stillness coexist. That is what I reach for in every piece.</p></div>
+    <div class="ii"><div class="i-n">03</div><p class="i-t">The archipelago</p><p class="i-b">Coast, rock, weather. The Swedish west coast teaches you to see. Every studio session starts with a walk, or the memory of one.</p></div>
+    <div class="ii"><div class="i-n">04</div><p class="i-t">Clay in hands</p><p class="i-b">There is no shortcut with clay. Each vessel holds the moment it was made — the pressure, the warmth, the quiet of that hour.</p></div>
+    <div class="ii"><div class="i-n">05</div><p class="i-t">Natural texture</p><p class="i-b">Linen, wool, raw canvas. Materials that age with grace. The home as a living thing, not a staged environment.</p></div>
+    <div class="ii"><div class="i-n">06</div><p class="i-t">The in-between</p><p class="i-b">The pause between exhale and inhale. Stillness that is not empty — it is full.</p></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="inner">
+  <span class="label-rose">How it's made</span>
+  <h2 class="sec-title">Made Slowly, by Hand</h2>
+  <div class="pg">
+    <div class="pi"><div class="p-n">I</div><p class="p-t">Made by hand</p><p class="p-b">Every piece is painted, formed, or felted individually in the Gothenburg studio. No mass production, no shortcuts. The hand shows in every piece.</p></div>
+    <div class="pi"><div class="p-n">II</div><p class="p-t">Made in small runs</p><p class="p-b">Paintings are one of a kind. Clay and wool pieces are made in limited quantities. When they are gone, they are gone.</p></div>
+    <div class="pi"><div class="p-n">III</div><p class="p-t">Shipped with care</p><p class="p-b">Each piece is carefully packaged and shipped directly from the Gothenburg studio. Tracked and insured for all destinations.</p></div>
+  </div>
+</div>
+</section>
+<footer>
+  <div class="foot-logo">Atelier Cuvillier © 2026 — Louise Cuvillier, Gothenburg</div>
+  <div class="foot-links">
+    <a href="index.html">Shop</a><a href="about.html">About</a>
+    <a href="trade.html">Trade</a><a href="contact.html">Contact</a>
+    <a href="https://www.etsy.com/shop/AtelierCuvillier" target="_blank">Etsy ↗</a>
+    <a href="https://thedignitypractice.com" target="_blank">The Dignity Practice</a>
+  </div>
+</footer>
+</body></html>
